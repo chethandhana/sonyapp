@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Prime</title>
+    <link rel="icon" style="border-radius: 20px;" href="./img/amazonlogo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./img/style.css">
+    <style type="text/css">
+        .showSlide {
+            display: none
+        }
+        
+        .showSlide img {
+            width: 100%;
+        }
+        
+        .slidercontainer {
+            position: relative;
+            margin-top: 20px;
+        }
+        
+        .left,
+        .right {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+        }
+        
+        .right {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        
+        .left:hover,
+        .right:hover {
+            background-color: rgba(115, 115, 115, 0.8);
+        }
+        
+        .content {
+            color: #eff5d4;
+            font-size: 30px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 10px;
+            width: 100%;
+            text-align: center;
+        }
+        /* Fading animation */
+        /* .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        } */
+        /*  @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        } */
+    </style>
+</head>
+<div>
+    <div class="slidercontainer">
+        <div class="showSlide fade">
+            <img src="https://m.media-amazon.com/images/S/sonata-images-prod/PV_IN_TheCourierLaunch/a8196c95-1bad-4958-bf39-d354c0289b52._UR3000,600_SX1500_FMwebp_.jpeg" />
+            <div class="content"></div>
+        </div>
+        <div class="showSlide fade">
+            <img src="https://m.media-amazon.com/images/S/sonata-images-prod/PV_IN_CruelSummerS1Launch/9b025783-4e29-4114-81c2-4f5483a2025c._UR3000,600_SX1500_FMwebp_.jpeg" />
+            <div class="content"></div>
+        </div>
+
+        <div class="showSlide fade">
+            <img src="https://m.media-amazon.com/images/S/sonata-images-prod/PV_IN_Chakdeindia2021/ae3b7f6e-ad57-4636-b752-0fe35a340a00._UR3000,600_SX1500_FMwebp_.jpeg" />
+            <div class="content"></div>
+        </div>
+        <div class="showSlide fade">
+            <img src="https://m.media-amazon.com/images/G/01/digital/video/sonata/PV_IN_Bandobast/1c842199-bb1e-4e12-a065-c87f66e2a173._UR3000,600_SX1500_FMwebp_.jpg" />
+            <div class="content"></div>
+        </div>
+        <!-- Navigation arrows -->
+        <a class="left" onclick="nextSlide(-1)">❮</a>
+        <a class="right" onclick="nextSlide(1)">❯</a>
+    </div>
+    <div class="dar">
+        <img src="./img/amazonlogo.png" alt="">
+        <ul>
+            <li><a href="#"> Home</a></li>
+            <li><a href="#">Tv shoes</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Kids</a></li>
+        </ul>
+
+        <input class="sea" type="search" placeholder="Search">
+        <div>
+            <img style="height: 40px; width: 40px;" class="accnt" src="./img/Account.png" alt="">
+
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Chethan Gowda</button>
+            <div class="dropdown-content">
+                <a href="#">Your Watch List</a>
+                <a href="#">Account & Setting</a>
+                <a href="#">watch anywhere</a>
+                <a href="#">Help</a>
+                <a href="#">Not Chethan Gowda? Sign Out</a>
+
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br>
+    <br><br><br><br><br><br><br>
+    <div class="">
+        <h1 style="color: white;">Watch next and TV Showes</h1>
+        <img src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/595512054fbd9fc7375596e427f9e472a09efaef735502fbcc271223bfaa58f4._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="">
+        <div>
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+    </div>
+
+</div>
+
+<script src="./srcipt.js"></script>
+
+</body>
+
+</html>
